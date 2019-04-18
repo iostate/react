@@ -1,0 +1,547 @@
+:root {
+  --bg-color: #131722;
+  --bg-light-color: #1f5881;
+  --text-color: #576372;
+  --text-light-color: #7695bb;
+}
+
+#test {
+	color: red;
+}
+
+body,
+html, .sideWrap {
+  color: var(--text-color) !important;
+  background: var(--bg-color);
+  font-size: 12px !important;
+}
+
+/* Comment/uncomment to show the instruments panel. Ex: Cardano, Dash etc*/
+.instrumentSelectorPanelWrapper {
+  display:none;
+}
+
+#header {
+    background: #191f2f;
+    color: var(--text-color);
+    -webkit-box-shadow: 0px 0px 2px 0px var(--text-color);
+    box-shadow: 0px 0px 2px 0px var(--text-color);
+}
+#header .headerLinks .link, 
+#header .headerLinks .dropdown-toggle {
+    color: var(--text-light-color);
+}
+#header .headerLinks .link.active {
+    color: #58a1fd;
+}
+#header .link:hover, #header .dropdown-toggle:hover {
+  text-decoration: underline;
+  text-shadow: none;
+}
+#header .link, #header .dropdown-toggle {
+    color: #6d8aae !important;
+}
+#header>.divider, #header .rightWrap>.divider {
+  background: none !important;
+}
+#footer {
+  display:none;
+}
+
+body.trade .static-footer {
+  font-size: 0.6rem;
+  background: #090b10;
+}
+.static-footer .section {
+  font-size: 10px;
+  line-height: 16px;
+}
+.static-footer .logo-section p {
+  font-size: 10px;
+  border-left: 0;
+  line-height: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-light-color) !important;
+}
+a, a:visited, .sm-clean a, .sm-clean a:focus, .sm-clean a:active {
+  color: #e8797a;
+}
+a:hover, .sm-clean a:hover {
+  color: #ea6263;
+}
+.sm-clean a.current {
+  color: #eaeaea;
+}
+.table-container .tooltipWrapper:not(.btn) {
+  border-bottom: 0;
+}
+
+/* ----- Main site -----*/
+.tickerBar .tickerBarInner {
+    background: var(--bg-color);
+    border-bottom: 1px solid #323c59;
+    color: var(--text-color);
+}
+
+.tradeSidebar .orderControls .ordTypes, .tradeSidebar .orderControls .fullPositionStatus, 
+.tradeSidebar .orderControls .well, .tradeSidebar .orderControls pre, 
+.tradeSidebar .orderControls .preferencesPage fieldset > .help-block,
+.preferencesPage .tradeSidebar .orderControls fieldset > .help-block,
+.tickerBar .symbol {
+    color: #a4b8d2;
+}
+
+.form-control {
+  background-color: #121318 !important;
+  border: 1px solid #262e46;
+  color: #aab7d1;
+}
+.btn-primary {
+    background-color: #256797;
+    border-color: #256797;
+    transition: none;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0f3651;
+    border-color: #0f3651
+}
+.table-container.no-hacks table {
+    border: 1px solid #252a3a;
+}
+.tradeSidebar .orderControls .ordTypes li.active .tabTitle {
+    text-decoration: underline;
+    background: var(--bg-light-color);
+    border-color: var(--bg-light-color);
+    border-top-color: var(--bg-light-color);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #406501;
+    border-color: #597c1d;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #9b0b1c;
+    border-color: #c14646;
+}
+
+.orderWrapper .btn.btn-lg label, .orderWrapper .btn-group-lg>.btn label {
+  border-bottom: 0;
+}
+.orderWrapper .btn.btn-lg {
+  transition: none !important;
+}
+.rc-slider-step {
+    background: #0f385db5;
+}
+.rc-slider-dot {
+border: 2px solid #abd1e6;
+    background-color: #abd1e6;
+}
+.rc-slider-handle {
+    border: solid 2px #3cea00;
+    background-color: #3cea00;
+}
+.tradeSidebar .sidebar {
+    color: #8d909f;
+}
+/*
+#ab2424#ab2424#a82424#a22121 .orderWrapper .fillPcn#a95252
+    background: rgba(223, 230, 235, .8);
+}*/
+.input-group-addon {
+    background: #a9bccc;
+    color: #000;
+}
+
+.input-group-addon {
+    color: #fff;
+    background-color: var(--bg-light-color);
+    border: 1px solid var(--bg-light-color);
+}
+
+.nav-tabs li.active {
+    background: var(--bg-light-color) !important;
+}
+.nav-tabs li.active .tabTitle {
+    border-color: var(--bg-light-color);
+    color: #fff;
+}
+
+/* ----- LeftPanel -----*/
+
+.tradeSidebar.preview .staticContent {
+    color: var(--text-color);
+}
+.tradeSidebar.preview .staticContent .header-anchor {
+    color: #1069a9
+}
+.tradeSidebar.preview .widget-controls {
+  color: #b7d8ef;
+}
+
+.indicatorGraph {
+    height: 2.2rem;
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(#539817), to(#fa3903));
+    background-image: linear-gradient(to right, #9c9618, #fa0303);
+}
+
+
+/* ----- Orders/Positions -----*/
+.nav-tabs .tabTitle {
+  color: var(--text-light-color);
+}
+
+/* ----- MainView -----*/
+.widget, .connectionStatus .message, .dropdown-menu {
+    outline: 1px solid #22283d;
+}
+.widget {
+    color: #fff;
+    background: #161a27;
+}
+.widget > header {
+    background: #22283d;
+    border-bottom: 1px solid #22283d;
+}
+.widget-tabs-outlined .nav-tabs .innerTitle {
+    border: 1px solid #2f3855;
+    background: #22283d;
+    box-shadow: none;
+}
+.widget-tabs-outlined .nav-tabs .active:first-child .tabTitle {
+    border-left-color: transparent;
+}
+.marginDisplay {
+    border: 1px solid #22283d;
+}
+.marginDisplay .row {
+    border-bottom: 1px solid var(--bg-light-color);
+}
+.marginDisplay .row-alt {
+    background: #1a1f30;
+    border-bottom: 1px solid #1a1f30;
+}
+/* ----- Tables -----*/
+.orderBook.dualColumn .lastPriceWidget {
+    background: #22283d;
+    border: 1px solid #22283d;
+}
+.table-striped tbody>tr:nth-child(odd)>td {
+    background-color: #1a1f30;
+}
+.openOrderTable .summary, .executionTable .summary {
+    border-left-color: #1a1f30;
+    border-right-color: #1a1f30;
+}
+.table-container-inner table {
+    border: 1px solid #1a1f30;
+}
+.tradeHistory table tr.short.terminated td:first-child, .openOrderTable tr.short.terminated td:first-child, .executionTable tr.short.terminated td:first-child, .positionsList tr.short.terminated td:first-child {
+    border-left: 6px solid #1a1f30;
+}
+.table-container-inner td {
+    border-bottom: 1px solid #22283d;
+    border-right: 1px solid #22283d;
+}
+.reactListRow {
+    border-top: 1px solid #22283d;
+}
+.recentTradeList .Sell {
+    color: #e86f4d;
+}
+.reactListRow.odd {
+    background: #121521;
+}
+.orderControls {
+    padding: 0.1rem;
+}
+.orderControlsAdvanced.well, pre.orderControlsAdvanced, .preferencesPage fieldset>.orderControlsAdvanced.help-block {
+    padding: 0.8rem;
+}
+.tradeSidebar .orderControls .fullPositionStatus {
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 0.4rem;
+}
+h1.underlined, .staticContent h1, .announcements h1, form h1, body.static-page .static-page .body h1, h2.underlined, .staticContent h2, .announcements h2, form h2, body.static-page .static-page .body h2, h3.underlined, .staticContent h3, .announcements h3, form h3, body.static-page .static-page .body h3, h4.underlined, h5.underlined, h6.underlined {
+    padding-bottom: .2857142858rem;
+    border-bottom: 1px solid #22283d;
+}
+
+.logoWrap {
+    display: block;
+    height: 0.923077rem;
+    text-align: center;
+    visibility: hidden;
+}
+.tickerBar .tickerBarSection {
+    border-left: 1px solid #22283d;
+}
+.orderBook.singleColumn .table-container {
+    font-size: 0.9rem;
+}
+.recentTradeList {
+    font-size: 0.9rem;
+    border: 0;
+}
+.darkTheme .tv-side-toolbar .tools-group .button.selected {
+    border-color: #22283d;
+}
+.darkTheme .tv-side-toolbar .tools-group .button svg {
+    /*fill: #22283d !important;*/
+}
+.positionDeleverageIndicator .leverageLight {
+  border: 0;
+    width: 10px;
+    margin-right: 3px;
+}
+.priceWidget.PlusTick {
+    color: #8ee720;
+}
+.priceWidget.MinusTick {
+    color: #ee977f;
+}
+.priceWidget.ZeroMinusTick {
+    color: #ff3e2c;
+}
+.tradeSidebar .pricePos {
+    color: #90f2b0;
+}
+.highMarkLiqDif, .pricePos {
+    color: #8ee720;
+}
+.tradeSidebar .priceNeg {
+    color: #ee977f;
+}
+.lowMarkLiqDif, .priceNeg {
+    color: #ff3e2c;
+}
+
+.dropdown-menu {
+    background: #22283d;
+    color: #77a5df;
+    border: 1px solid #4e5981;
+    border-top: 3px solid #4e5981;
+}
+.tradeSidebar .orderControls .ordTypes .dropdown-menu .tabTitle {
+    background: transparent;
+}
+.plusMinusButtons .btn {
+  color: #fefefe !important;
+  font-weight: bold;
+  border-color: transparent !important;
+}
+.plusMinusButtons .btn:nth-of-type(1) {
+    background-color: #881e00;
+}
+.plusMinusButtons .btn:nth-of-type(2) {
+    background-color: #7a4900;
+}
+.plusMinusButtons .btn:nth-of-type(3) {
+    background-color: #36580d;
+}
+.plusMinusButtons .btn:nth-of-type(4) {
+    background-color: #174607;
+}
+
+.tradeSidebar .orderControls .ordTypes .tabTitle {
+    color: #c6e5fb;
+    margin-top: 0;
+}
+
+/* ----- Scrollbar -----*/
+.webkit-scrollbars::-webkit-scrollbar-track, .widget .body::-webkit-scrollbar-track, .table-container-inner::-webkit-scrollbar-track, .reactList::-webkit-scrollbar-track, .announcementsDropdown .dropdown-menu::-webkit-scrollbar-track, .notifications::-webkit-scrollbar-track, .chatWidget .chats::-webkit-scrollbar-track {
+    background: rgb(66, 79, 124);
+    border-radius: 4px;
+}
+
+/* ----- TradingView -----*/
+
+.darkTheme .header-chart-panel .button, .darkTheme .header-chart-panel .button.disabled, .darkTheme .hotlist-controls .button, .darkTheme .hotlist-controls .button.disabled, .darkTheme .symbol-edit-widget .button, .darkTheme .symbol-edit-widget .button.disabled {
+  background: var(--bg-color) !important;
+  color: #77a5df;
+}
+.darkTheme .tv-side-toolbar {
+  background: var(--bg-color) !important;
+  color: #77a5df;
+  border: 1px solid #22283d;
+}
+
+.darkTheme .header-chart-panel .button, .darkTheme .header-chart-panel .button.disabled, .darkTheme .hotlist-controls .button, .darkTheme .hotlist-controls .button.disabled, .darkTheme .symbol-edit-widget .button, .darkTheme .symbol-edit-widget .button.disabled {
+    border: 1px solid #22283d;
+    color: #77a5df !important;
+}
+
+.darkTheme .favored-list-container, .darkTheme .favored-list-container span, .darkTheme .favored-list-container a, .darkTheme .favored-list-container .item, .darkTheme .favored-list, .darkTheme .favored-list span, .darkTheme .favored-list a, .darkTheme .favored-list .item, .darkTheme .header-chart-panel .button, .darkTheme .header-chart-panel .button.disabled, .darkTheme .hotlist-controls .button, .darkTheme .hotlist-controls .button.disabled, .darkTheme .symbol-edit-widget .button, .darkTheme .symbol-edit-widget .button.disabled, .darkTheme .tv-dialog, .darkTheme ._tv-dialog, .darkTheme .tv-dialog .js-study-item, .darkTheme ._tv-dialog .js-study-item, .darkTheme input, .darkTheme input.inset, .darkTheme .context-menu-wrapper, .darkTheme .context-menu .action-separator td, .darkTheme .context-menu, .darkTheme .properties-tabs a.properties-tabs-label, .darkTheme .property-page, .darkTheme .charts-popup-list .item span, .darkTheme tr.symbol-edit-popup:hover, .darkTheme .tv-objects-tree-item {
+    background: var(--bg-color) !important;
+    border-color: #22283d;
+    color: #77a5df !important;
+}
+
+.tradeSidebar .orderControls .ordTypes,
+.tradeSidebar .orderControls .fullPositionStatus,
+.tradeSidebar .orderControls .well,
+.tradeSidebar .orderControls pre,
+.tradeSidebar .orderControls .preferencesPage fieldset > .help-block,
+.preferencesPage .tradeSidebar .orderControls fieldset > .help-block {
+  background: var(--bg-color) !important;
+  color: #77a5df;
+}
+.nav-tabs li.active {
+  background: #006368;
+}
+#header .link,
+#header .dropdown-toggle {
+  color: #666;
+}
+.instrumentSelectorPanel.widget-tabs .inactiveExpiry .btn {
+  color: #ddd !important;
+}
+
+.tv-side-toolbar .tools-group:not(:first-child):not(.no-delimiter):before {
+    background: #323c59 !important;
+}
+.tv-side-toolbar .tools-group .button .side {
+    border-left: 1px dotted #323c59;
+}
+.charts-popup-list .item.active {
+  color: #cad2d9 !important;
+  background: #323c59;
+}
+.charts-popup-list {
+  color: #323c59;
+  border: 1px solid #323c59;
+  background: #121318;
+}
+.charts-popup-list .item span {
+    color: #a4b8d2;
+}
+.charts-popup-list .separator {
+    border-top: 1px solid #323c59;
+}
+.charts-popup-list .item.active, .feature-no-touch .charts-popup-list .item:hover {
+    background: var(--bg-light-color);
+}
+.favored-list-container.active span.submenu, .favored-list-container span.submenu.active {
+    color: #adafb3;
+    background: #1d2439 !important;
+    border-color: #323c59;
+}
+.charts-popup-list.intervals-list .item {
+    color: #687391;
+}
+.symbol-search-dialog input,
+input.symbol-edit {
+  background-color: #121318 !important;
+  border: 1px solid #262e46;
+  color: #aab7d1;
+}
+.favored-list-container span {
+  color: #7389c4;
+  background: #121318;
+  border-color: #262e46;
+}
+.favored-list-container span.submenu i {
+  background: #3d4b70;
+}
+.button svg, span.button svg {
+  fill: #7389c4 !important;
+}
+
+.bottom-widgetbar-content.backtesting .button,
+.header-chart-panel .button,
+.hotlist-controls .button,
+.symbol-edit-widget .button {
+  padding: 7px 12px;
+  border: 1px solid #262e46;
+  background: var(--bg-color);
+  color: #3d4b70;
+}
+.drawing-favorites-toolbar .tools-group .button, .feature-no-touch .tv-side-toolbar .tools-group .button:active, .feature-no-touch .tv-side-toolbar .tools-group .button:hover, .feature-touch .tv-side-toolbar .tools-group .button:active, .properties-toolbar .tools-group .button, .tv-side-toolbar .tools-group .button.active, .tv-side-toolbar .tools-group .button.selected {
+    background-color: var(--bg-color);
+    border-color: #3d4b70;
+}
+.tv-side-toolbar .tools-group .button.selected .main,
+.feature-no-touch .header-chart-panel .button.disabled:active,
+.feature-touch .header-chart-panel .button.disabled:active,
+.header-chart-panel .button.disabled,
+.header-chart-panel .button.disabled.active {
+  background: var(--bg-color) !important;
+  border-color: #2e2f32 !important;
+  box-shadow: none;
+}
+.chart-page .chart-container {
+    border: 1px solid #262e46;
+    background: var(--bg-color);
+}
+.tv-side-toolbar {
+    background: var(--bg-color);
+    color: #7389c4;
+    border-right: 1px solid #262e46;
+}
+.tv-close-panel {
+    border: solid #262e46;
+    background: #262e46 no-repeat 50% 50%;
+}
+.hidden .tv-close-panel.right, .tv-close-panel.left {
+    background: url(data:image/gif;base64,R0lGODlhAwAFAPABAMnLzf///yH5BAUAAAEALAAAAAADAAUAQAIGTGCgqAcFADs=) no-repeat 50% 50%;
+}
+.hidden .tv-close-panel.right, .tv-close-panel.left {
+    background-color: #262e46;
+}
+.chart-controls-bar {
+    background: var(--bg-color);
+}
+.chart-controls-bar-buttons a:before {
+    border-left: 1px solid #262e46;
+}
+.darkTheme .chart-controls-bar {
+    background: #262e46;
+    border-top: 1px solid #262e46;
+    height: 21px;
+}
+.chart-controls-bar-buttons a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 14px;
+    border: 0;
+}
+
+/* --- Hover ---- */
+.feature-no-touch .header-chart-panel .button:hover, .feature-no-touch .symbol-edit-widget .button:hover {
+    background: var(--bg-light-color);
+    color: #fff;
+}
+.feature-no-touch .button.properties:hover svg {
+    fill: var(--bg-light-color);
+}
+.feature-no-touch .favored-list-container span:hover,
+.feature-no-touch .chart-controls-bar-buttons a:not(.disabled):hover {
+    background: var(--bg-light-color);
+    border-color: var(--bg-light-color);
+    color: #cfd3e9;
+    stroke: #cfd3e9;
+    fill: #cfd3e9;
+}
+
+.feature-no-touch ._tv-dialog .button:not(.disabled):not(.selected):hover:before, .feature-no-touch ._tv-dialog .custom-select .switcher:not(.disabled):not(.selected):hover:before, .feature-no-touch ._tv-dialog .favored-list-container span:not(.disabled):not(.selected):hover:before, .feature-no-touch ._tv-dialog .submenu:not(.disabled):not(.selected):hover:before, .feature-no-touch .bottom-widgetbar-content.backtesting .button:not(.disabled):not(.selected):hover:before, .feature-no-touch .bottom-widgetbar-content.backtesting .custom-select .switcher:not(.disabled):not(.selected):hover:before, .feature-no-touch .bottom-widgetbar-content.backtesting .favored-list-container span:not(.disabled):not(.selected):hover:before, .feature-no-touch .bottom-widgetbar-content.backtesting .submenu:not(.disabled):not(.selected):hover:before, .feature-no-touch .header-chart-panel .button:not(.disabled):not(.selected):hover:before, .feature-no-touch .header-chart-panel .custom-select .switcher:not(.disabled):not(.selected):hover:before, .feature-no-touch .header-chart-panel .favored-list-container span:not(.disabled):not(.selected):hover:before, .feature-no-touch .header-chart-panel .submenu:not(.disabled):not(.selected):hover:before, .feature-no-touch .properties-toolbar .button:not(.disabled):not(.selected):hover:before, .feature-no-touch .properties-toolbar .custom-select .switcher:not(.disabled):not(.selected):hover:before, .feature-no-touch .properties-toolbar .favored-list-container span:not(.disabled):not(.selected):hover:before, .feature-no-touch .properties-toolbar .submenu:not(.disabled):not(.selected):hover:before {
+    border: 1px solid #262e46;
+}
+
+
+/* ChatWidget */
+.chatWidget {
+  background: #4f5056 !important;
+}
+.chatSection {
+    border-top: 1px solid #343131 !important;
+}

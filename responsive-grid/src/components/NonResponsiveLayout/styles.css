@@ -1,0 +1,8 @@
+:local(.a) {
+	background-image: url("https://image.ibb.co/g6scPy/Screen_Shot_2018_06_29_at_6_37_35_PM.png");
+	color: white;
+}
+
+:local(.items) {
+	padding-left: 14px;
+}
